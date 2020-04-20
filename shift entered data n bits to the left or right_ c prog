@@ -1,0 +1,37 @@
+/*C program to shift entered data n bits to the left or right*/
+
+#include <stdio.h>
+
+int main()
+{
+	int data,n;
+        char direction;
+	
+	printf("Enter value of data: ");
+	scanf("%d",&data);
+	
+	printf("Entered value is %d (decimal), %x (hex)\n",data,data); 
+
+	printf(" Enter the number of bits to shift: ")
+        scanf("%d",&n)
+
+        /*left or right*/ 
+        printf(" Enter l if you want to shift left or r for right")
+        scanf("%d",&direction)
+        
+
+        if(direction==l){ 
+
+	/*shifting n bits left*/
+	data=data<<n; 
+        } 
+        
+        else{ 
+        /*shifting n bits right*/ 
+        data=data>>n;
+        }
+
+	printf("After shifting value is %d (decimal), %x (hex)\n",data,data);
+	
+	return 0;
+}
