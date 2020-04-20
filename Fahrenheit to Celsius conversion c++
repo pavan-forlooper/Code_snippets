@@ -1,0 +1,13 @@
+
+#include <iostream.h> 
+int main()
+{
+double far , cel;
+cout<<"Pls enter the temperature in fahrenheit: ";
+cin>>far;
+//convert to celsius
+cel = (5.0 / 9.0) * (far - 32.0);
+cout<<"The temperature in celsius is "<<cel;
+
+return 0;
+}
