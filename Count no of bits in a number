@@ -1,0 +1,7 @@
+int no = 0; // no to keep track of bits
+    while (x > 0) //x is th given data
+    {
+        x = x&(x-1);
+        no+=1;
+    }
+   "no= number of bits"
